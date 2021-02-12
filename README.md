@@ -26,28 +26,34 @@ found on the web, where the input sources and writing styles vary wildly.
 - Add a note about pre-training here.
 -->
 
-| Dataset                     | No of relations | No of examples       |
-| --------------------------  | --------------  | -------------------- |
-| TACRED                      | 42              | 106,264              |
-| DocRED (human-annotated)    | 96              | 63,427               |
-| DocRED (weakly-supervised)  | 96              | 1,508,320            |
-| WebRED (human-annotated)    | 420 [CHANGE]    | 173,140 [UPDATE]     |
-| WebRED (weakly-supervised)  | 420             | 199,786,781 [UPDATE] |
+| Dataset                    | No of relations     | No of examples            |
+|----------------------------|---------------------|---------------------------|
+| TACRED <!-- [link] -->     | 42                  | 106,264                   |
+| DocRED (human-annotated)   | 96                  | 63,427                    |
+| DocRED (weakly-supervised) | 96                  | 1,508,320                 |
+| WebRED (human-annotated)   | 420 <!--[CHANGE]--> | 173,140 <!-- [UPDATE] --> |
+
+<!-- Robert: I wouldn't show the size of the weakly supervised data here since
+     it is not published. -->
+<!--
+| WebRED (weakly-supervised) | 420                 | 199,786,781 [UPDATE]      |
+-->
 
 ## Preparation
 First, download the data onto your disk:
 
 ```bash
-cd $HOME
-mkdir webred && cd webred
-wget -c [LINK] .
+cd ~
+git clone https://github.com/google-research-datasets/WebRED.git
+cd WebRED/
 ```
 
 ## Using the data
 The dataset is distributed in `Tensorflow.Example` format encoded as
 [`TFRecord`](https://www.tensorflow.org/tutorials/load_data/tfrecord).
 
-One can easily read the content of the dataset using Tensorflow's data API [link]:
+One can easily read the content of the dataset using
+[Tensorflow's data API](https://www.tensorflow.org/api_docs/python/tf/data):
 
 ```python
 import tensorflow as tf
@@ -69,9 +75,12 @@ sentence = webred_sentences[0]  # As an instance of `tf.Example`.
 
 Description of the features:
 
-  * `num_pos_raters`: Number of unique human raters who thought that the sentence expresses the given relation.
+  * `num_pos_raters`: Number of unique human raters who thought that the
+    sentence expresses the given relation.
   * `num_raters`: Number of unique human raters whou annotated the sentence fact pair
-  * `relation_id`: The [WikiData relation ID](https://www.wikidata.org/wiki/Wikidata:Identifiers) of the fact.
+  * `relation_id`: The
+    [WikiData relation ID](https://www.wikidata.org/wiki/Wikidata:Identifiers)
+    of the fact.
   * `relation_name`: Human readable name of the relation of the fact.
   * `sentence`: The sentence with object and subject annotation in it.
   * `source name`: The name of the subject (source) entity.
