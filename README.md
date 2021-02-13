@@ -94,7 +94,7 @@ def get_feature(sentence, feature_name, idx=0):
   feature = sentence.features.feature[feature_name]
   return getattr(feature, feature.WhichOneof('kind')).value[idx]
 
-annotated_seentence_text = get_feature(sentence, 'sentence').decode('utf-8')
+annotated_sentence_text = get_feature(sentence, 'sentence').decode('utf-8')
 relation_name = get_feature(sentence, 'relation_name').decode('utf-8')
 empirical_probability_of_the_sentence_expresses_the_relation = (
     get_feature(sentence, 'num_pos_raters') /
