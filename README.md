@@ -1,6 +1,6 @@
 # WebRED - Web Relation Extraction Dataset
 
-A large and diverse dataset for extracting relationships from a variety of text
+A diverse dataset for extracting relationships from a variety of text
 found on the World Wide Web. The dataset can be downloaded from
 https://github.com/google-research-datasets/WebRED.
 
@@ -26,12 +26,18 @@ found on the web, where the input sources and writing styles vary wildly.
 - Add a note about pre-training here.
 -->
 
-| Dataset                    | No of relations     | No of examples            |
-|----------------------------|---------------------|---------------------------|
-| TACRED <!-- [link] -->     | 42                  | 106,264                   |
-| DocRED (human-annotated)   | 96                  | 63,427                    |
-| DocRED (weakly-supervised) | 96                  | 1,508,320                 |
-| WebRED (human-annotated)   | 420 <!--[CHANGE]--> | 173,140 <!-- [UPDATE] --> |
+| Dataset                      | No of relations     | No of examples |
+|------------------------------|---------------------|----------------|
+| TACRED <!-- [link] -->       | 42                  | 106,264        |
+| DocRED (human-annotated)     | 96                  | 63,427         |
+| DocRED (weakly-supervised)   | 96                  | 1,508,320      |
+| WebRED  5 (human-annotated)  | 420 <!--[CHANGE]--> | 3,898          |
+| WebRED 2+1 (human-annotated) | 420 <!--[CHANGE]--> | 107,819        |
+
+Each example in `WebRED 5` was annotated by exactly `5` independent human
+annotators. In `WebRED 2+1`, each example was annotated by `2` independent
+annotators. If they disagreed, an additional annotator (`+1`) was assigned to
+the example who also provided a disambiguating annotation.
 
 <!-- Robert: I wouldn't show the size of the weakly supervised data here since
      it is not published. -->
