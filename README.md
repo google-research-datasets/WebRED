@@ -31,13 +31,20 @@ found on the web, where the input sources and writing styles vary wildly.
 | TACRED <!-- [link] -->       | 42                  | 106,264        |
 | DocRED (human-annotated)     | 96                  | 63,427         |
 | DocRED (weakly-supervised)   | 96                  | 1,508,320      |
-| WebRED  5 (human-annotated)  | 420 <!--[CHANGE]--> | 3,898          |
-| WebRED 2+1 (human-annotated) | 420 <!--[CHANGE]--> | 107,819        |
+| WebRED  5 (human-annotated)  | 523                 | 3,898          |
+| WebRED 2+1 (human-annotated) | 523                 | 107,819        |
 
 Each example in `WebRED 5` was annotated by exactly `5` independent human
 annotators. In `WebRED 2+1`, each example was annotated by `2` independent
 annotators. If they disagreed, an additional annotator (`+1`) was assigned to
 the example who also provided a disambiguating annotation.
+In our paper, we used this data to fine-tune a model trained on large
+unsupervised dataset. The details of how data collection of the pre-training
+data, the unsupervised model training, the supervised fine-tuning using
+`WebRED 2+1` and evaluation on `WebRED 5` happend are described in the paper.
+
+You may also want to mention in the ReadMe that we describe methods to collect
+pre-training data in the paper.
 
 <!-- Robert: I wouldn't show the size of the weakly supervised data here since
      it is not published. -->
