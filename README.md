@@ -38,19 +38,16 @@ Each example in `WebRED 5` was annotated by exactly `5` independent human
 annotators. In `WebRED 2+1`, each example was annotated by `2` independent
 annotators. If they disagreed, an additional annotator (`+1`) was assigned to
 the example who also provided a disambiguating annotation.
-In our paper, we used this data to fine-tune a model trained on large
+
+In our paper, we used the `WebRED` data to fine-tune a model trained on large
 unsupervised dataset. The details of how data collection of the pre-training
 data, the unsupervised model training, the supervised fine-tuning using
 `WebRED 2+1` and evaluation on `WebRED 5` happend are described in the paper.
+We also did some comparison between this model and some other models built based
+on other datasets mentioned in the table above.
 
 You may also want to mention in the ReadMe that we describe methods to collect
 pre-training data in the paper.
-
-<!-- Robert: I wouldn't show the size of the weakly supervised data here since
-     it is not published. -->
-<!--
-| WebRED (weakly-supervised) | 420                 | 199,786,781 [UPDATE]      |
--->
 
 ## Preparation
 First, download the data onto your disk:
