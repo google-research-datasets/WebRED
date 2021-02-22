@@ -30,8 +30,8 @@ found on the web, where the input sources and writing styles vary wildly.
 | Dataset                                             | No of relations     | No of examples |
 |-----------------------------------------------------|---------------------|----------------|
 | [TACRED](https://nlp.stanford.edu/projects/tacred/) | 42                  | 106,264        |
-| DocRED (human-annotated)                            | 96                  | 63,427         |
-| DocRED (weakly-supervised)                          | 96                  | 1,508,320      |
+| [DocRED](https://github.com/thunlp/DocRED) (human-annotated)                            | 96                  | 63,427         |
+| [DocRED](https://github.com/thunlp/DocRED) (weakly-supervised)                          | 96                  | 1,508,320      |
 | WebRED  5 (human-annotated)                         | 523                 | 3,898          |
 | WebRED 2+1 (human-annotated)                        | 523                 | 107,819        |
 
