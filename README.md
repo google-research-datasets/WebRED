@@ -1,11 +1,13 @@
 # WebRED - Web Relation Extraction Dataset
 
 A dataset for extracting relationships from a variety of text found on the World Wide Web.
-Text on the web has diverse surface forms including writing styles, complexity and grammar,
-and this dataset collects sentences from a variety of webpages and documents that represent
+Text on the web has diverse surface forms including writing styles, complexity and grammar.
+This dataset collects sentences from a variety of webpages and documents that represent
 a variety of those categories.
-This dataset consists of sentences whose entities are tagged as subject `SUBJ{...}` 
-and object `OBJ{...}` which are connected by a relationship that the sentence might indicate.
+In each sentence, there will be a subject and object entities tagged with subject
+`SUBJ{...}` and object `OBJ{...}`, respectively.
+The two entities are either related by a relation from a set of pre-defined ones
+or has no relation.
 
 More information about the dataset can be found in
 [our paper](https://arxiv.org/abs/2102.09681).
