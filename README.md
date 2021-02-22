@@ -8,31 +8,33 @@ The dataset consists of sentences from a web documents whose entities are
 tagged as subject `SUBJ{...}` and object `OBJ{...}` which are connected by a
 relationship that the sentence might indicate.
 
-<!--
-More information about the dataset can be found in the paper
-[ADD_CITATION W/ ARXIV LINK].
+More information about the dataset can be found in
+[our paper](https://arxiv.org/abs/2102.09681).
 Please if you use the dataset cite the above paper as:
-[ADD CITATION]
--->
+
+```
+@misc{ormandi2021webred,
+    title={WebRED: Effective Pretraining And Finetuning For Relation Extraction On The Web}, 
+    author={Robert Ormandi and Mohammad Saleh and Erin Winter and Vinay Rao},
+    year={2021},
+    eprint={2102.09681},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2102.09681},
+}
+```
 
 We compare our dataset against other publicly available relationship extraction
 corpus in the table below. Notably, ours is the only dataset with text that is
 found on the web, where the input sources and writing styles vary wildly.
 
-<!--
-**TODOs**
-- Make a note that the number here is what we used.
-- Delete the weakly-supervised numbers in the table. 
-- Add a note about pre-training here.
--->
-
-| Dataset                      | No of relations     | No of examples |
-|------------------------------|---------------------|----------------|
-| TACRED <!-- [link] -->       | 42                  | 106,264        |
-| DocRED (human-annotated)     | 96                  | 63,427         |
-| DocRED (weakly-supervised)   | 96                  | 1,508,320      |
-| WebRED  5 (human-annotated)  | 523                 | 3,898          |
-| WebRED 2+1 (human-annotated) | 523                 | 107,819        |
+| Dataset                                             | No of relations     | No of examples |
+|-----------------------------------------------------|---------------------|----------------|
+| [TACRED](https://nlp.stanford.edu/projects/tacred/) | 42                  | 106,264        |
+| DocRED (human-annotated)                            | 96                  | 63,427         |
+| DocRED (weakly-supervised)                          | 96                  | 1,508,320      |
+| WebRED  5 (human-annotated)                         | 523                 | 3,898          |
+| WebRED 2+1 (human-annotated)                        | 523                 | 107,819        |
 
 Each example in `WebRED 5` was annotated by exactly `5` independent human
 annotators. In `WebRED 2+1`, each example was annotated by `2` independent
