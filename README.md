@@ -29,12 +29,15 @@ We compare our dataset against other publicly available relationship extraction
 corpus in the table below. Notably, ours is the only dataset with text that is
 found on the web, where the input sources and writing styles vary wildly.
 
-| Dataset                                                        | No of relations     | No of examples |
-|----------------------------------------------------------------|---------------------|----------------|
-| [TACRED](https://nlp.stanford.edu/projects/tacred/)            | 42                  | 106,264        |
-| [DocRED](https://github.com/thunlp/DocRED) (human-annotated)   | 96                  | 63,427         |
-| *WebRED  5*                                                    | 523                 | 3,898          |
-| *WebRED 2+1*                                                   | 523                 | 107,819        |
+| Dataset                                              | No of relations     | No of examples |
+|------------------------------------------------------|---------------------|----------------|
+| [TACRED](https://nlp.stanford.edu/projects/tacred/)  | 42                  | 106,264        |
+| [DocRED](https://github.com/thunlp/DocRED)           | 96                  | 63,427         |
+| *WebRED  5*                                          | 523                 | 3,898          |
+| *WebRED 2+1*                                         | 523                 | 107,819        |
+
+We only present the human-annotated subsets from each dataset in the tabla
+above.
 
 Each example in `WebRED 5` was annotated by exactly `5` independent human
 annotators. In `WebRED 2+1`, each example was annotated by `2` independent
