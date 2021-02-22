@@ -1,9 +1,11 @@
 # WebRED - Web Relation Extraction Dataset
 
 A dataset for extracting relationships from a variety of text found on the World Wide Web.
-Text on the web has diverse surface forms including writing styles, complexity and grammar, and this dataset collects sentences from a variety of webpages and documents that represent a variety of those categories.
-This dataset consists of sentences whose entities are tagged as subject `SUBJ{...}` and object `OBJ{...}` which are connected by a
-relationship that the sentence might indicate.
+Text on the web has diverse surface forms including writing styles, complexity and grammar,
+and this dataset collects sentences from a variety of webpages and documents that represent
+a variety of those categories.
+This dataset consists of sentences whose entities are tagged as subject `SUBJ{...}` 
+and object `OBJ{...}` which are connected by a relationship that the sentence might indicate.
 
 More information about the dataset can be found in
 [our paper](https://arxiv.org/abs/2102.09681).
@@ -42,7 +44,8 @@ In our paper, we used the `WebRED` data to fine-tune a model trained on a large
 unsupervised dataset. The details of how data collection of the pre-training
 data, the unsupervised model training, the supervised fine-tuning using
 `WebRED 2+1` and evaluation on `WebRED 5` happend are described in the paper.
-The paper also compares this model against others built on the datasets mentioned in the table above.
+The paper also compares this model against others built on the datasets mentioned in the table 
+above.
 
 ## Preparation
 First, download the data onto your disk:
