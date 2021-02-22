@@ -108,3 +108,15 @@ empirical_probability_of_the_sentence_expresses_the_relation = (
     get_feature(sentence, 'num_pos_raters') /
     get_feature(sentence, 'num_raters'))
 ```
+## License
+
+This data is licensed by Google LLC under a [Creative Commons Attribution 4.0
+International License](http://creativecommons.org/licenses/by/4.0/).
+Users will be allowed to modify and repost it, and we encourage them to analyze
+and publish research based on the data.
+
+## Contact Us
+
+If you have a technical question regarding the dataset, code or publication,
+please create an issue in this repository. You may also reach us at
+webred@google.com.
