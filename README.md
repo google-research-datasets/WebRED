@@ -30,7 +30,9 @@ corpus in the table below. Notably, ours is the only dataset with text that is
 found on the web, where the input sources and writing styles vary wildly.
 
 We only present the human-annotated subsets from each dataset in the table
-below.
+below. The numbers in this table might be different from the ones reported in
+our paper as we were unable to release the full version of our dataset due to
+legal concerns.
 
 | Dataset                                              | No of relations     | No of examples |
 |------------------------------------------------------|---------------------|----------------|
